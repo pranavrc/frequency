@@ -1,6 +1,6 @@
 /* frequency.js
  * (c) Pranav Ravichandran <me@onloop.net>
- * Released the MIT license.
+ * Released under the MIT license.
  * http://github.com/pranavrc/frequency/
  */
 
