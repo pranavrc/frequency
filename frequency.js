@@ -15,27 +15,27 @@ $(document).ready(function () {
         var initialFontWeight = $(this).css('font-weight');
         var finalFontWeight = initialFontWeight <= 600 ? initialFontWeight * 1.5 : initialFontWeight;
 
-        $('head').append("<style>                                 \
-            @keyframes " + aName + " {                            \
+        $('head').append("<style>                                           \
+            @keyframes " + aName + " {                                      \
                 0%   {opacity:1; font-weight:" + finalFontWeight + ";}" + fadeTimePercentage +
                 "%   {opacity:0.25; font-weight:" + initialFontWeight + ";} \
                 100% {opacity:0.25; font-weight:" + initialFontWeight + ";} \
-            }                                                     \
-            @-webkit-keyframes " + aName + " {                    \
+            }                                                               \
+            @-webkit-keyframes " + aName + " {                              \
                 0%   {opacity:1; font-weight:" + finalFontWeight + ";}" + fadeTimePercentage +
                 "%   {opacity:0.25; font-weight:" + initialFontWeight + ";} \
                 100% {opacity:0.25; font-weight:" + initialFontWeight + ";} \
-            }                                                     \
-            @-moz-keyframes " + aName + " {                       \
+            }                                                               \
+            @-moz-keyframes " + aName + " {                                 \
                 0%   {opacity:1; font-weight:" + finalFontWeight + ";}" + fadeTimePercentage +
                 "%   {opacity:0.25; font-weight:" + initialFontWeight + ";} \
                 100% {opacity:0.25; font-weight:" + initialFontWeight + ";} \
-            }                                                     \
-            @-o-keyframes " + aName + " {                         \
+            }                                                               \
+            @-o-keyframes " + aName + " {                                   \
                 0%   {opacity:1; font-weight:" + finalFontWeight + ";}" + fadeTimePercentage +
                 "%   {opacity:0.25; font-weight:" + initialFontWeight + ";} \
                 100% {opacity:0.25; font-weight:" + initialFontWeight + ";} \
-            }                                                     \
+            }                                                               \
         </style>");
 
         $(this).css({
