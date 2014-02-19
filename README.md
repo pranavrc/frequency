@@ -13,7 +13,7 @@ Set up your script tags:
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"><script>
     <script src="/path/to/frequency.js"><script>
   
-Add the id frequency-&lt;time period in seconds&gt; to any element that you want to flash:
+Add the attribute __data-frequency="&lt;time period in seconds&gt;"__ to any element that you want to flash:
 
     <span data-frequency="2.71828">This will flash once in 2.71828 seconds.<span>
     <span data-frequency="10">This will flash once in 10 seconds.<span>
