@@ -17,10 +17,10 @@
       <div id="exp">Periodic blinkers, <a href="http://xkcd.com/1331/" target="_blank">XKCD-style</a></div><hr /><br />
       <table>
         <tr>
-          <td id="frequency-1" title="~1 heartbeat per second.">HEARTBEAT</td>
-          <td id="frequency-0.2398" title="~4.17 births per second.">BIRTHS</td>
-          <td id="frequency-0.5555" title="~1.80 deaths per second.">DEATHS</td>
-          <td id="frequency-21.8322" title="~0.0458 earthquakes per second.">EARTHQUAKES</td>
+          <td data-frequency="1" title="~1 heartbeat per second.">HEARTBEAT</td>
+          <td data-frequency="0.2398" title="~4.17 births per second.">BIRTHS</td>
+          <td data-frequency="0.5555" title="~1.80 deaths per second.">DEATHS</td>
+          <td data-frequency="21.8322" title="~0.0458 earthquakes per second.">EARTHQUAKES</td>
         </tr>
       </table><br />
       <hr /><br />
@@ -31,14 +31,14 @@
           &lt;script src="http://code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;<br />
           &lt;script src="/path/to/frequency.js"&gt;&lt;/script&gt;<br />
         </div><br />
-        Add the id <strong><em>frequency-&lt;time period in seconds&gt;</em></strong> to any element that you want to flash:
+        Add the id <strong><em>frequency="&lt;time period in seconds&gt;</em></strong> to any element that you want to flash:
         <div class="code">
-          &lt;span id="<strong>frequency-2.71828</strong>"&gt;This will flash once in 2.71828 seconds.&lt;/span&gt;<br />
-          &lt;span id="<strong>frequency-10</strong>"&gt;This will flash once in 10 seconds.&lt;/span&gt;<br />
+          &lt;span id="<strong>frequency="2.71828</strong>"&gt;This will flash once in 2.71828 seconds.&lt;/span&gt;<br />
+          &lt;span id="<strong>frequency="10</strong>"&gt;This will flash once in 10 seconds.&lt;/span&gt;<br />
         </div><br />
         That gives us:<br />
-        <span id="frequency-2.71828">This will flash once in 2.71828 seconds.</span><br />
-        <span id="frequency-10">This will flash once in 10 seconds.</span>
+        <span data-frequency="2.71828">This will flash once in 2.71828 seconds.</span><br />
+        <span data-frequency="10">This will flash once in 10 seconds.</span>
       </div>
     </div><br />
     <hr /><br />

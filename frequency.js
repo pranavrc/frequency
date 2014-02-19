@@ -7,8 +7,8 @@
 $(document).ready(function () {
     var count = 0;
 
-    $("*[id^=frequency]").each(function () {
-        var frequency = parseFloat(($(this).attr('id')).split("-")[1]);
+    $("[data-frequency]").each(function () {
+        var frequency = parseFloat(($(this).data('frequency')));
         var fadeDelay = Math.log(frequency) / Math.LN10;
         var fadeTimePercentage = (frequency <= 2) ? 75 : fadeDelay * 100 / frequency;
         var aName = 'fade' + count;
