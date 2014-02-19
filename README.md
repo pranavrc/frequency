@@ -15,7 +15,7 @@ Set up your script tags:
   
 Add the id frequency-&lt;time period in seconds&gt; to any element that you want to flash:
 
-    <span id="frequency-2.71828">This will flash once in 2.71828 seconds.<span>
-    <span id="frequency-10">This will flash once in 10 seconds.<span>
+    <span data-frequency="2.71828">This will flash once in 2.71828 seconds.<span>
+    <span data-frequency="10">This will flash once in 10 seconds.<span>
     
 And we're done!
