@@ -9,6 +9,11 @@
 
     <script src="./jquery-1.11.0.min.js"></script>
     <script src="./frequency.js"></script>
+    <script>
+      $(document).ready(function() {
+         $("[data-frequency]").frequency();
+      });
+    </script>
   </head>
   <body>
     <div id="parent">
@@ -31,6 +36,14 @@
           &lt;script src="http://code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;<br />
           &lt;script src="/path/to/frequency.js"&gt;&lt;/script&gt;<br />
         </div><br />
+        Initiate the script on the elements you want:
+        <div class="code">
+          &lt;script&gt;<br>
+          <span style="padding-left: 8px;">$(document).ready(function() {</span>  <br>
+          <span style="padding-left: 16px;">$("[data-frequency]").frequency();</span> <br>
+          <span style="padding-left: 8px;">});</span> <br>
+          &lt;/script&gt;
+        </div><br />
         Add the attribute <strong><em>data-frequency="&lt;time period in seconds&gt;"</em></strong> to any element that you want to flash:
         <div class="code">
           &lt;span <strong>data-frequency="2.71828"</strong>&gt;This will flash once in 2.71828 seconds.&lt;/span&gt;<br />
@@ -38,7 +51,21 @@
         </div><br />
         That gives us:<br />
         <span data-frequency="2.71828">This will flash once in 2.71828 seconds.</span><br />
-        <span data-frequency="10">This will flash once in 10 seconds.</span>
+        <span data-frequency="10">This will flash once in 10 seconds.</span><br>
+        <br>
+        Options
+        <div class="code">
+          <strong>timeUnit</strong><br>
+          Default - 1<br>
+          Unit of time in relation to seconds.<br>
+          Example: to speed everything up by a factor of 20 use timeUnit: 0.05<br>
+          <br>
+          &lt;script&gt;<br>
+          <span style="padding-left: 8px;">$(document).ready(function() {</span>  <br>
+          <span style="padding-left: 16px;">$("[data-frequency]").frequency( { timeUnit: 0.05 } );</span> <br>
+          <span style="padding-left: 8px;">});</span> <br>
+          &lt;/script&gt;
+        </div><br />
       </div>
     </div><br />
     <hr /><br />
