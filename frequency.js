@@ -10,6 +10,7 @@ $(document).ready(function () {
     $("[data-frequency]").each(function () {
         var frequency = parseFloat(($(this).data('frequency')));
         var fadeDelay = Math.log(frequency) / Math.LN10;
+        var initialDelay = Math.random() * frequency;
         var fadeTimePercentage = (frequency <= 2) ? 75 : fadeDelay * 100 / frequency;
         var aName = 'fade' + count;
 
@@ -46,10 +47,10 @@ $(document).ready(function () {
             "-webkit-animation-iteration-count": "infinite",
             "-moz-animation-iteration-count": "infinite",
             "-o-animation-iteration-count": "infinite",
-            "animation-delay": frequency + "s",
-            "-webkit-animation-delay": frequency + "s",
-            "-moz-animation-delay": frequency + "s",
-            "-o-animation-delay": frequency + "s"
+            "animation-delay": initialDelay + "s",
+            "-webkit-animation-delay": initialDelay + "s",
+            "-moz-animation-delay": initialDelay + "s",
+            "-o-animation-delay": initialDelay + "s"
         });
 
         count++;
