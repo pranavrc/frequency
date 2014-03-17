@@ -39,18 +39,10 @@ $(document).ready(function () {
 
         $(this).css({
             "opacity": 0.1,
-            "animation": aName + " " + frequency + "s forwards",
-            "-webkit-animation": aName + " " + frequency + "s forwards",
-            "-moz-animation": aName + " " + frequency + "s forwards",
-            "-o-animation": aName + " " + frequency + "s forwards",
-            "animation-iteration-count": "infinite",
-            "-webkit-animation-iteration-count": "infinite",
-            "-moz-animation-iteration-count": "infinite",
-            "-o-animation-iteration-count": "infinite",
-            "animation-delay": initialDelay + "s",
-            "-webkit-animation-delay": initialDelay + "s",
-            "-moz-animation-delay": initialDelay + "s",
-            "-o-animation-delay": initialDelay + "s"
+            "animation": aName + " " + frequency + "s " + initialDelay + "s infinite forwards",
+            "-webkit-animation": aName + " " + frequency + "s " + initialDelay + "s infinite forwards",
+            "-moz-animation": aName + " " + frequency + "s " + initialDelay + "s infinite forwards",
+            "-o-animation": aName + " " + frequency + "s " + initialDelay + "s infinite forwards"
         });
 
         count++;
