@@ -37,6 +37,7 @@ $(document).ready(function () {
         </style>");
 
         $(this).css({
+            "opacity": 0.1,
             "animation": aName + " " + frequency + "s forwards",
             "-webkit-animation": aName + " " + frequency + "s forwards",
             "-moz-animation": aName + " " + frequency + "s forwards",
@@ -44,7 +45,11 @@ $(document).ready(function () {
             "animation-iteration-count": "infinite",
             "-webkit-animation-iteration-count": "infinite",
             "-moz-animation-iteration-count": "infinite",
-            "-o-animation-iteration-count": "infinite"
+            "-o-animation-iteration-count": "infinite",
+            "animation-delay": frequency + "s",
+            "-webkit-animation-delay": frequency + "s",
+            "-moz-animation-delay": frequency + "s",
+            "-o-animation-delay": frequency + "s"
         });
 
         count++;
